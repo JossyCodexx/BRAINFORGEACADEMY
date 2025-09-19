@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Brainforge Academy - Student Registration</title>
+  <link rel="stylesheet" href="./css/register.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #3498db, #8e44ad);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .register-container {
+      background: #fff;
+      padding: 40px 35px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      width: 100%;
+      max-width: 460px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .register-container h2 {
+      margin-bottom: 25px;
+      color: #2c3e50;
+      font-size: 26px;
+    }
+
+    .register-container input,
+    .register-container select {
+      width: 100%;
+      padding: 14px;
+      margin: 12px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      outline: none;
+      font-size: 15px;
+      box-sizing: border-box;
+      transition: 0.3s;
+    }
+
+    .register-container input:focus,
+    .register-container select:focus {
+      border-color: #3498db;
+      box-shadow: 0 0 6px rgba(52,152,219,0.4);
+    }
+
+    .register-container button {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #3498db, #2ecc71);
+      border: none;
+      color: #fff;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 18px;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .register-container button:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, #2980b9, #27ae60);
+    }
+
+    .register-container p {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .register-container a {
+      color: #3498db;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .register-container a:hover {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+<!-- 
+   
+<nav class="navbar">
+  <div class="logo">
+    <a href="home.html">
+      <img src="images/sucess.logo.png" alt="" style="height:20vh; width:130%;">
+    </a>
+  </div>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="service.html">Service</a></li>
+     <li><a href="view-courses.html">view-courses</a></li>
+     <li><a href="register.html">Register</a></li>
+     <li><a href="forgot-password.html">Forgot-password</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <i class="fas fa-bars"></i>
+</nav> -->
+
+
+
+<section>
+  
+
+  <div class="register-container">
+    <h2>Student Registration</h2>
+    <form action="login.html" method="POST">
+      <input type="text" name="fullname" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required autocomplete="email">
+      <input type="text" name="student_id" placeholder="Student ID" required>
+
+      <select name="course" required>
+        <option value="">Select Course</option>
+        <option value="data-analysis">Data Analysis</option>
+        <option value="data-science">Data Science</option>
+        <option value="frontend-development">Frontend Development</option>
+        <option value="backend-development">Backend Development</option>
+        <option value="fullstack-development">Full Stack Development</option>
+        <option value="ui-ux">UI/UX Design</option>
+        <option value="cybersecurity">Cybersecurity</option>
+        <option value="cloud-computing">Cloud Computing</option>
+        <option value="ai-ml">Artificial Intelligence & Machine Learning</option>
+        <option value="mobile-development">Mobile App Development</option>
+        <option value="blockchain">Blockchain Development</option>
+        <option value="devops">DevOps</option>
+      </select>
+
+      <input type="password" name="password" placeholder="Password" required autocomplete="new-password">
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required autocomplete="new-password">
+
+      <button type="submit">Register</button>
+      <p>Already have an account? <a href="login.html">Login Here</a></p>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>

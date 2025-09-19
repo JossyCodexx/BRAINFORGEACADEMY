@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enroll - Brain-Forge Academy</title>
+  <link rel="stylesheet" href="./css/enroll.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #0066cc;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 700px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0066cc;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .card-mockup {
+      background: #e6f0ff;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+
+    .card-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card-row input {
+      flex: 1;
+    }
+
+    .card-row.small input {
+      flex: 1;
+    }
+
+    .card-note {
+      font-size: 13px;
+      color: #333;
+    }
+
+    button {
+      display: inline-block;
+      background: #0066cc;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+      width: 100%;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #004999;
+    }
+
+    .payment-icons-blue {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+      font-size: 20px;
+      color: #0066cc;
+    }
+
+    .icons-label {
+      font-size: 14px;
+      color: #333;
+      margin-left: 10px;
+    }
+
+    .bank-info {
+      background: #e6f0ff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .bank-info h3 {
+      margin-top: 0;
+      color: #0066cc;
+    }
+
+    .bank-info p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+    
+<nav class="navbar">
+  <div class="logo">
+    <a href="home.html">
+      <img src="images/sucess.logo.png" alt="" style="height:20vh; width:130%;">
+    </a>
+  </div>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="service.html">Service</a></li>
+     <li><a href="view-courses.html">view-courses</a></li>
+     <li><a href="register.html">Register</a></li>
+     <li><a href="forgot-password.html">Forgot-password</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <i class="fas fa-bars"></i>
+</nav>
+
+
+  <header>
+    <h1>Brain-Forge Academy</h1>
+    <p>Enroll Now & Make Payment</p>
+  </header>
+
+  <div class="container">
+    <h2>Student Enrollment Form</h2>
+
+    <form id="enroll-form">
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="course">Select Course:</label>
+      <select id="course" name="course" required>
+        <option value="">-- Choose a Course --</option>
+        <option value="Cyber Security">Cyber Security - N270,000</option>
+        <option value="Python">Python for Data Science - N180,000</option>
+        <option value="Data Engineering">Data Engineering - N450,000</option>
+        <option value="Data Science">Data Science - N280,000</option>
+        <option value="Full Stack">Full Stack - N500,000</option>
+        <option value="Product Design">Product Design - N150,000</option>
+        <option value="Dev Programs">Dev Programs - N200,000</option>
+        <option value="Data & Business">Data & Business - N250,000</option>
+      </select>
+
+      <label for="amount">Amount (Naira):</label>
+      <input type="number" id="amount" name="amount" min="1" step="100" required>
+
+      <!-- ATM Card Mockup -->
+      <div class="card-mockup" aria-hidden="true">
+        <div class="card-row">
+          <input type="text" placeholder="Card number •••• •••• •••• ••••" readonly>
+        </div>
+        <div class="card-row small">
+          <input type="text" placeholder="MM / YY" readonly>
+          <input type="text" placeholder="CVV" readonly>
+        </div>
+        <div class="card-note">
+          Enter your ATM card details securely in the popup after clicking <strong>Pay Now</strong>.
+        </div>
+      </div>
+
+      <button type="submit" id="pay-now-btn">Pay Now</button>
+    </form>
+
+    <!-- Bank Account Info -->
+    <div class="bank-info">
+      <h3>Bank Transfer Options</h3>
+      <p><strong>Zenith Bank</strong>: 20825220409 — Account Name: Melody-Lgnatius-Ibu</p>
+      <p><strong>FCMB</strong>: 1001517136 — Account Name: Melody-Lgnatius-Ibu</p>
+      <p>After payment, send a copy of your receipt via email or WhatsApp to confirm enrollment.</p>
+    </div>
+
+    <!-- Card icons -->
+    <div class="payment-icons-blue">
+      <i class="fab fa-cc-visa"></i>
+      <i class="fab fa-cc-mastercard"></i>
+      <i class="fas fa-credit-card"></i>
+      <span class="icons-label">Secure payments — Visa · MasterCard · Verve</span>
+    </div>
+  </div>
+
+  <!-- JS for demo -->
+  <script>
+    document.getElementById('enroll-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for enrolling! Proceed to pay with your ATM card or make a bank transfer using the provided account details.');
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer>
+  <div class="foot">
+    <!-- Brand -->
+    <div class="brand">
+      <img src="images/sucess.logo.png" alt="BrainForge Academy Logo" class="footer-logo">
+      <strong>BrainForge Academy</strong>
+      <p>Learn • Build • Succeed</p>
+    </div>
+
+    <!-- Programs -->
+    <div>
+      <strong>Programs</strong>
+      <p>
+         <a href="services.html">Exams</a><br>
+        <a href="services.html">Frontend</a><br>
+        <a href="services.html">Backend</a><br>
+        <a href="services.html">Data-Analysis</a><br>
+        <a href="services.html">Data-Science</a><br>
+        <a href="services.html">WAEC Tutorials</a><br>
+        <a href="services.html">JAMB Coaching</a><br>
+        <a href="services.html">UI/UX Design</a><br>
+        <a href="services.html">AI & Machine Learning</a><br>
+        <a href="services.html">Fullstack Development</a>
+      </p>
+    </div>
+
+    <!-- Company -->
+    <div>
+      <strong>Company</strong>
+      <p>
+       <a href="home.html">Home</a>
+        <br>
+        <a href="about.html">About</a><br>
+        <a href="contact.html">Contact</a><br>
+        <a href="service.html">Service</a><br>
+        <a href="login.html">Login</a>
+      </p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social">
+      <strong>Connect with us</strong>
+      <p>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+         <a href="https://wa.me/2348034141117" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://wa.me/2349112528978" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </p>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © <span id="year"></span> BrainForge Academy. All rights reserved.
+  </div>
+</footer>
+
+
+  
+  <script src="./Js/enroll.js"></script>
+</body>
+</html>
+

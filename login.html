@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <title>Brainforge Academy - Student Login</title>
+  <style>
+    /* Reset body */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Login box */
+    .login-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    /* Heading */
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    /* Inputs */
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      outline: none;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    /* Input focus */
+    .login-container input:focus {
+      border-color: #3498db;
+    }
+
+    /* Button */
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background: #3498db;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background 0.3s ease;
+    }
+
+    .login-container button:hover {
+      background: #2980b9;
+    }
+
+    /* Paragraph + links */
+    .login-container p {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .login-container a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<!--    
+<nav class="navbar">
+  <div class="logo">
+    <a href="home.html">
+      <img src="images/sucess.logo.png" alt="" style="height:20vh; width:130%;">
+    </a>
+  </div>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="service.html">Service</a></li>
+     <li><a href="view-courses.html">view-courses</a></li>
+     <li><a href="register.html">Register</a></li>
+     <li><a href="forgot-password.html">Forgot-password</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <i class="fas fa-bars"></i>
+</nav> -->
+
+  <div class="login-container">
+    <h2>Brainforge Academy</h2>
+    <form id="loginForm" action="student-dashboard.html" method="POST">
+      <input type="text" name="email" placeholder="Student ID / Email" autocomplete="username" required>
+      <input type="password" name="password" placeholder="Password" autocomplete="current-password" required>
+      <button type="submit">Login</button>
+      <p><a href="#">Forgot Password?</a></p>
+      <p>New student? <a href="register.html">Register Here</a></p>
+    </form>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

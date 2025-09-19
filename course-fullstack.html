@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Fullstack Development - BST Academy</title>
+  <link rel="stylesheet" href="./css/course-fullstack.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #8b0000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 30px auto;
+    }
+
+    .course-details {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .course-details h2 {
+      color: #8b0000;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      margin: 15px 0;
+      font-size: 16px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .programs, .reviews {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .programs h3, .reviews h3 {
+      color: #8b0000;
+      margin-bottom: 15px;
+    }
+
+    .program-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .program-item {
+      background: #ffecec;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .reviews .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 15px;
+    }
+
+    .review-card {
+      background: #fff5f5;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .review-card img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+
+    .review-card h4 {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #8b0000;
+    }
+
+    .review-card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .enroll-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #dc3545, #8b0000);
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease-in-out;
+      margin-top: 15px;
+    }
+
+    .enroll-btn:hover {
+      background: linear-gradient(135deg, #8b0000, #5a0000);
+      transform: translateY(-3px);
+    }
+
+    
+  </style>
+</head>
+<body>
+
+
+
+
+    
+    
+<nav class="navbar">
+  <div class="logo">
+    <a href="home.html">
+      <img src="images/sucess.logo.png" alt="" style="height:20vh; width:130%;">
+    </a>
+  </div>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="service.html">Service</a></li>
+     <li><a href="view-courses.html">view-courses</a></li>
+     <li><a href="register.html">Register</a></li>
+     <li><a href="forgot-password.html">Forgot-password</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <i class="fas fa-bars"></i>
+</nav>
+
+  <header>
+    <h1>Fullstack Development</h1>
+    <p>Diploma / Courses / Certificate Courses / Fullstack Development</p>
+  </header>
+
+  <div class="container">
+    <!-- About Course -->
+    <div class="course-details">
+      <h2>About the Course</h2>
+      <p class="info">🎯 <span class="highlight">Master Fullstack Development</span></p>
+      <p class="info"><strong>Duration:</strong> 6 months</p>
+      <p class="info"><strong>Price:</strong> N300,000 ($186)</p>
+
+      <ul>
+        <li>Specially crafted for beginners – no prior knowledge needed</li>
+        <li>Learn from scratch to become a coding rockstar 💻</li>
+        <li>Project-based learning – solve real-world problems</li>
+        <li>Post-learning mentorship from expert instructors</li>
+      </ul>
+
+      <!-- Enroll button -->
+      <a href="enroll.html" class="enroll-btn">Enroll Now</a>
+    </div>
+<!-- Full Stack Programs -->
+<div class="programs">
+  <h3>Full Stack Programs Covered</h3>
+  <div class="program-list">
+
+    <!-- HTML -->
+    <div class="program-item">
+      <button class="dropdown-btn">HTML (Hyper Text Markup Language)</button>
+      <div class="dropdown-content">
+        <p>Understand the basics of HTML through simple explanations and practical examples. Dive deeper into tags, elements, and structure for web development.</p>
+      </div>
+    </div>
+
+    <!-- CSS -->
+    <div class="program-item">
+      <button class="dropdown-btn">CSS (Cascading Style Sheets)</button>
+      <div class="dropdown-content">
+        <p>Master the fundamentals of CSS, including selectors, properties, and styling techniques. Explore how to create visually appealing web pages.</p>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="program-item">
+      <button class="dropdown-btn">JavaScript</button>
+      <div class="dropdown-content">
+        <p>Explore the essentials of JavaScript, from variables and data types to functions and control flow. Learn how to manipulate web page elements dynamically.</p>
+      </div>
+    </div>
+
+    <!-- React -->
+    <div class="program-item">
+      <button class="dropdown-btn">React</button>
+      <div class="dropdown-content">
+        <p>Master React, a JavaScript library essential for dynamic web interfaces. Learn JSX and component-based web development.</p>
+      </div>
+    </div>
+
+    <!-- Node.js -->
+    <div class="program-item">
+      <button class="dropdown-btn">Node.js</button>
+      <div class="dropdown-content">
+        <p>Boost your backend programming prowess with Node.js. Hone your grasp of essential Node.js modules and asynchronous programming.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= CSS ================= -->
+<style>
+  .program-item {
+    margin-bottom: 12px;
+  }
+
+  .dropdown-btn {
+    width: 100%;
+    text-align: left;
+    background: #007bff;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .dropdown-btn:hover {
+    background: #0056b3;
+  }
+
+  .dropdown-content {
+    display: none;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 3px solid #007bff;
+    margin-top: 5px;
+    border-radius: 6px;
+  }
+
+  .dropdown-content p {
+    margin: 0;
+    font-size: 15px;
+    color: #333;
+  }
+</style>
+
+<!-- ================= JavaScript ================= -->
+<script>
+  document.querySelectorAll(".dropdown-btn").forEach(btn => {
+    btn.addEventListener("click", function() {
+      const content = this.nextElementSibling;
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+  });
+</script>
+
+
+    <!-- Student Reviews -->
+    <div class="reviews">
+      <h3>Students Review</h3>
+      <div class="review-grid">
+        <div class="review-card">
+          <img src="student7.jpg" alt="Student Review">
+          <h4>Aisha Bello</h4>
+          <p>"This Fullstack program gave me confidence to work on both frontend and backend. I can now build complete apps on my own!"</p>
+        </div>
+        <div class="review-card">
+          <img src="student8.jpg" alt="Student Review">
+          <h4>Michael Johnson</h4>
+          <p>"Learning React and Node together was a game-changer. The projects were challenging but rewarding!"</p>
+        </div>
+        <div class="review-card">
+          <img src="student9.jpg" alt="Student Review">
+          <h4>Precious Okafor</h4>
+          <p>"The mentorship after the course really helped me polish my skills. I’m now applying for Fullstack roles with confidence."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+
+
+
+
+  
+
+  <!-- Footer -->
+  <footer>
+  <div class="foot">
+    <!-- Brand -->
+    <div class="brand">
+      <img src="images/sucess.logo.png" alt="BrainForge Academy Logo" class="footer-logo">
+      <strong>BrainForge Academy</strong>
+      <p>Learn • Build • Succeed</p>
+    </div>
+
+    <!-- Programs -->
+    <div>
+      <strong>Programs</strong>
+      <p>
+         <a href="services.html">Exams</a><br>
+        <a href="services.html">Frontend</a><br>
+        <a href="services.html">Backend</a><br>
+        <a href="services.html">Data-Analysis</a><br>
+        <a href="services.html">Data-Science</a><br>
+        <a href="services.html">WAEC Tutorials</a><br>
+        <a href="services.html">JAMB Coaching</a><br>
+        <a href="services.html">UI/UX Design</a><br>
+        <a href="services.html">AI & Machine Learning</a><br>
+        <a href="services.html">Fullstack Development</a>
+      </p>
+    </div>
+
+    <!-- Company -->
+    <div>
+      <strong>Company</strong>
+      <p>
+       <a href="home.html">Home</a>
+        <br>
+        <a href="about.html">About</a><br>
+        <a href="contact.html">Contact</a><br>
+        <a href="service.html">Service</a><br>
+        <a href="login.html">Login</a>
+      </p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social">
+      <strong>Connect with us</strong>
+      <p>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+         <a href="https://wa.me/2348034141117" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://wa.me/2349112528978" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </p>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © <span id="year"></span> BrainForge Academy. All rights reserved.
+  </div>
+</footer>
+
+
+  
+  <script src="./Js/course-fullstack.js"></script>
+</body>
+</html>

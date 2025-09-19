@@ -1,0 +1,300 @@
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      padding: 7px 50px;
+      color: white;
+    }
+
+    .fas{
+      color: black;
+    }
+/* 
+    .navbar .logo {
+      font-size: 22px;
+      font-weight: bold;
+    } */
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      position: relative;
+    }
+
+    .navbar ul li a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+    }
+
+    .navbar ul li a:hover {
+      background: #1565c0;
+      border-radius: 5px;
+    }
+
+    
+    .dropdown li a {
+      color: #333;
+      padding: 10px;
+    }
+
+    .dropdown li a:hover {
+      background: #f0f0f0;
+    }
+
+    .navbar ul li:hover .dropdown {
+      display: block;
+    }
+
+
+
+
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      padding: 7px 50px;
+      color: white;
+    }
+
+    .fas{
+      color: black;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      position: relative;
+    }
+
+    .navbar ul li a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+    }
+
+    .navbar ul li a:hover {
+      background: #1565c0;
+      border-radius: 5px;
+    }
+
+    
+    .dropdown li a {
+      color: #333;
+      padding: 10px;
+    }
+
+    .dropdown li a:hover {
+      background: #f0f0f0;
+    }
+
+    .navbar ul li:hover .dropdown {
+      display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+/* Reset body */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login box */
+.login-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Heading */
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Inputs */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Input focus */
+.login-container input:focus {
+  border-color: #3498db;
+}
+
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #3498db;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #2980b9;
+}
+
+/* Paragraph + links */
+.login-container p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-container a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+footer {
+  background: wheat;   /* White background */
+  color: #111;        /* Default text black */
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.foot {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.foot strong {
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: block;
+  color: #000; /* Strong titles in black */
+}
+
+.foot p, 
+.foot a {
+  font-size: 14px;
+  color: #333; /* Dark gray for links/text */
+  text-decoration: none;
+}
+
+.foot a:hover {
+  color: #0077ff; /* Blue on hover */
+}
+
+.social p {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.social a {
+  color: #333;       /* Social icons black */
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social a:hover {
+  color: #0077ff;   /* Blue hover for social */
+}
+
+.copyright {
+  text-align: center;
+  font-size: 13px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  color: #444;
+}
+
+
+.footer-logo {
+  max-width: 120px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

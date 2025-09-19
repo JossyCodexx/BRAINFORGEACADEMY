@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Courses - Brain-Forge Academy</title>
+  <link rel="stylesheet" href="./css/view-courses.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #0d6efd;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .courses-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .course-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .course-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #0d6efd;
+    }
+
+    .price {
+      font-size: 1rem;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    .discount {
+      font-size: 1rem;
+      color: #198754;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background: #0d6efd;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0b5ed7;
+    }
+  </style>
+</head>
+<body>
+
+
+      
+<nav class="navbar">
+  <div class="logo">
+    <a href="home.html">
+      <img src="images/sucess.logo.png" alt="" style="height:20vh; width:130%;">
+    </a>
+  </div>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="service.html">Service</a></li>
+     <li><a href="view-courses.html">view-courses</a></li>
+     <li><a href="register.html">Register</a></li>
+     <li><a href="forgot-password.html">Forgot-password</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <i class="fas fa-bars"></i>
+</nav>
+
+  <header>
+    <h1>Brain-Forge Academy Courses</h1>
+    <p>Master in-demand tech skills & stand out in Africa’s booming tech scene 🚀</p>
+  </header>
+
+
+<section>
+
+<div class="courses-container">
+
+   <!-- Frontend Development -->
+<div class="course-card">
+  <h3>Frontend Development</h3>
+  <p><strong>Price:</strong> N180,000 ($112)</p>
+  <p><strong>Discount:</strong> Pay Once, Pay Only N150,000 ($93)</p>
+  <a href="course-frontend.html" class="view-btn">View Course</a>
+</div>
+
+<!-- Backend Development -->
+<div class="course-card">
+  <h3>Backend Development</h3>
+  <p><strong>Price:</strong> N235,000 ($146)</p>
+  <p><strong>Discount:</strong> Pay Once, Pay Only N215,000 ($134)</p>
+  <a href="course-backend.html" class="view-btn">View Course</a>
+</div>
+
+<!-- Fullstack Development -->
+<div class="course-card">
+  <h3>Fullstack Development</h3>
+  <p><strong>Price:</strong> N300,000 ($186)</p>
+  <p><strong>Discount:</strong> Pay Once, Pay Only N270,000 ($168)</p>
+  <a href="course-fullstack.html" class="view-btn">View Course</a>
+</div>
+
+<!-- Data and Business Analysis -->
+<div class="course-card">
+  <h3>Data and Business Analysis</h3>
+  <p><strong>Price:</strong> N180,000 ($112)</p>
+  <p><strong>Discount:</strong> Pay Once, Pay Only N150,000 ($93)</p>
+  <a href="course-data-analysis.html" class="view-btn">View Course</a>
+</div>
+
+<!-- Product Design -->
+<div class="course-card">
+  <h3>Product Design (UI/UX)</h3>
+  <p><strong>Price:</strong> N160,000 ($99)</p>
+  <p><strong>Discount:</strong> Pay Once, Pay Only N140,000 ($87)</p>
+  <a href="course-uiux.html" class="view-btn">View Course</a>
+</div>
+
+<!-- DevOps -->
+<div class="course-card">
+  <h3>DevOps Engineering</h3>
+  <p><strong>Price:</strong> N350,000 ($217)</p>
+  <p><strong>Discount:</strong> Pay Once, Pay Only N325,000 ($202)</p>
+  <a href="course-devops.html" class="view-btn">View Course</a>
+</div>
+
+<!-- Cyber Security -->
+<div class="course-card">
+  <h3>Cyber Security</h3>
+  <p><strong>Price:</strong> N270,000 ($168)</p>
+  <p><strong>Discount:</strong> Pay Once, Pay Only N240,000 ($150)</p>
+  <a href="course-cybersecurity.html" class="view-btn">View Course</a>
+</div>
+
+<!-- Python for Data Science -->
+<div class="course-card">
+  <h3>Python for Data Science</h3>
+  <p><strong>Price:</strong> N180,000 ($112)</p>
+  <p><strong>Discount:</strong> Pay Once, Pay Only N150,000 ($93)</p>
+  <a href="course-python.html" class="view-btn">View Course</a>
+</div>
+
+<!-- Data Engineering -->
+<div class="course-card">
+  <h3>Data Engineering</h3>
+  <p><strong>Price:</strong> N450,000 ($280)</p>
+  <p><strong>Discount:</strong> Pay Once, Pay Only N420,000 ($261)</p>
+  <a href="course-data-engineering.html" class="view-btn">View Course</a>
+</div>
+
+<!-- Data Science -->
+<div class="course-card">
+  <h3>Data Science</h3>
+  <p><strong>Price:</strong> N280,000 ($175)</p>
+  <p><strong>Discount:</strong> Pay Once, Pay Only N250,000 ($155)</p>
+  <a href="course-datascience.html" class="view-btn">View Course</a>
+</div>
+
+</section>
+
+  
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer>
+  <div class="foot">
+    <!-- Brand -->
+    <div class="brand">
+      <img src="images/sucess.logo.png" alt="BrainForge Academy Logo" class="footer-logo">
+      <strong>BrainForge Academy</strong>
+      <p>Learn • Build • Succeed</p>
+    </div>
+
+    <!-- Programs -->
+    <div>
+      <strong>Programs</strong>
+      <p>
+         <a href="services.html">Exams</a><br>
+        <a href="services.html">Frontend</a><br>
+        <a href="services.html">Backend</a><br>
+        <a href="services.html">Data-Analysis</a><br>
+        <a href="services.html">Data-Science</a><br>
+        <a href="services.html">WAEC Tutorials</a><br>
+        <a href="services.html">JAMB Coaching</a><br>
+        <a href="services.html">UI/UX Design</a><br>
+        <a href="services.html">AI & Machine Learning</a><br>
+        <a href="services.html">Fullstack Development</a>
+      </p>
+    </div>
+
+    <!-- Company -->
+    <div>
+      <strong>Company</strong>
+      <p>
+       <a href="home.html">Home</a>
+        <br>
+        <a href="about.html">About</a><br>
+        <a href="contact.html">Contact</a><br>
+        <a href="service.html">Service</a><br>
+        <a href="login.html">Login</a>
+      </p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social">
+      <strong>Connect with us</strong>
+      <p>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+         <a href="https://wa.me/2348034141117" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://wa.me/2349112528978" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </p>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © <span id="year"></span> BrainForge Academy. All rights reserved.
+  </div>
+</footer>
+
+
+  
+  <script src="./Js/view-courses.js"></script>
+</body>
+</html>
